@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 20px auto; /* Center the body horizontally with top and bottom margin of 20px */
+    max-width: 80%; /* Set maximum width to 80% of the viewport */
+    padding: 20px;
+}
+
+
+
+h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+img {
+    width: 350px;
+} */
+
+
