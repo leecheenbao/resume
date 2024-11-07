@@ -290,15 +290,17 @@ nav ul li a:hover::after {
 .project-image {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
+    border-radius: 15px 15px 0 0;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    object-position: center;
+    transition: transform 0.3s ease;
 }
 
 .project-info {
@@ -1439,15 +1441,41 @@ footer .container {
 .project-image {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
+    border-radius: 15px 15px 0 0;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease;
+}
+
+/* 對於特定需要完整顯示的圖片（如UI截圖） */
+.project-image.contain img {
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+/* 懸停效果 */
+.project-card:hover .project-image img {
+    transform: scale(1.02);
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 768px) {
+    .project-image {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-image {
+        height: 200px;
+    }
 }
 
 /* 專案連結覆蓋層 */
