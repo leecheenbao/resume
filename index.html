@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李慶寶 Paul - 軟體工程師</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -22,12 +24,70 @@
 
     <main>
         <section id="home">
-            <div class="profile">
-                <h1>李慶寶 Paul</h1>
-                <h2>Software Engineer</h2>
-                <p>我是一名具有四年經驗的Java後端工程師，擅長使用Java、Spring Boot進行Web應用程式開發，包括Mybatis、Spring Data JPA等等。</p>
-                <p>除了公司所接觸的項目，我也有參與幾個小型side project的開發，這些項目涉及到不同的技術和主題，都是獨立規劃後端API及資料庫設計，並致力於實現CI/CD自動化流程來達到持續集成和持續部署。</p>
-                <p>我同時也是一位具有七年軍旅生涯的退伍軍人，曾在軍中培養了堅毅、紀律和解決問題的能力。迎接新的生涯挑戰，我選擇了轉職為軟體工程師，追求我對技術和創新的熱愛。</p>
+            <div class="profile-container">
+                <div class="profile-content">
+                    <div class="profile-intro">
+                        <div class="profile-photo">
+                            <img src="img/leecheenbao.avif" alt="李慶寶 Paul Lee">
+                            <div class="social-links">
+                                <a href="https://github.com/leecheenbao" target="_blank" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/paul-lee-0a6101227" target="_blank" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-header">
+                            <h1>李慶寶 Paul Lee</h1>
+                            <h2>Java Backend Engineer</h2>
+                            <div class="profile-quick-info">
+                                <span><i class="fas fa-map-marker-alt"></i> 基隆市</span>
+                                <span><i class="fas fa-envelope"></i> leecheenbao@gmail.com</span>
+                                <span><i class="fas fa-code-branch"></i> 5 年開發經驗</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-description">
+                        <!-- <p class="highlight-text">
+                            "擁有軍旅歷練與程式開發的雙重背景，專注於打造高效能的後端解決方案"
+                        </p> -->
+
+                        <div class="profile-details">
+                            <p>我是一名具有 5 年經驗的 Java 後端工程師，同時也是擁有 7 年軍旅生涯的退伍軍人。這段特殊的經歷培養了我堅毅的性格、嚴謹的工作態度，以及面對挑戰時的解決問題能力。</p>
+                            
+                            <h3>技術專長</h3>
+                            <p>專注於 Java 後端開發，熟練運用：</p>
+                            <ul class="skill-list">
+                                <li>Spring Boot 框架開發 RESTful API</li>
+                                <li>資料庫設計與優化 (MySQL, SQLServer, Oracle, Redis)</li>
+                                <li>微服務架構設計</li>
+                                <li>CI/CD 自動化部署流程</li>
+                                <li>雲端服務整合 (GCP, AWS)</li>
+                            </ul>
+
+                            <h3>工作特質</h3>
+                            <ul class="trait-list">
+                                <li><strong>獨立作業能力：</strong> 能夠獨立完成專案規劃、API設計到部署的完整流程</li>
+                                <li><strong>團隊協作：</strong> 善於溝通，樂於分享技術知識</li>
+                                <li><strong>持續學習：</strong> 保持對新技術的學習熱忱，定期參與技術研討會</li>
+                                <li><strong>問題解決：</strong> 具備系統性思維，能快速定位並解決技術問題</li>
+                            </ul>
+                            
+                            <div class="career-goals">
+                                <h3>職涯目標</h3>
+                                <p>持續在後端開發領域深耕，專注於：</p>
+                                <ul>
+                                    <li>大規模系統架構設計與優化</li>
+                                    <li>微服務架構的最佳實踐</li>
+                                    <li>DevOps 文化的推廣與實踐</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -35,7 +95,20 @@
             <div class="container">
                 <h2 class="section-title">工作經歷</h2>
                 
-                <div class="timeline">
+                    <div class="timeline">
+                      <div class="timeline-item">
+                        <div class="timeline-date">2024/07 - 2024/11</div>
+                        <div class="timeline-content">
+                            <h3>Java 工程師</h3>
+                            <h4>奔騰科技集團</h4>
+                            <ul class="job-description">
+                                <li>負責後端API開發及維護</li>
+                                <li>負責體育賽事數據爬蟲</li>
+                                <li>負責體育賽事主播影音及賽事直播串流</li>
+                                <li>直播平台聊天室及推播功能優化</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2024/02 - 2024/05</div>
                         <div class="timeline-content">
@@ -44,7 +117,7 @@
                             <ul class="job-description">
                                 <li>負責HKTVmall 澳門平台相關業務</li>
                                 <li>利用Spring Admin整合公司內部專案並優化專案規範</li>
-                                <li>實施澳門地區特有的優惠和贈品邏輯，提升用戶體驗</li>
+                                <li>實施澳門地區特有優惠和贈品邏輯，提升用戶體驗</li>
                                 <li>通過CI/CD流程，確保程式碼質量和發布效率</li>
                             </ul>
                         </div>
@@ -67,27 +140,28 @@
                     </div>
 
                     <div class="timeline-item">
-                      <div class="timeline-date">2021/09 - 2022/01</div>
+                      <div class="timeline-date">2021/10 - 2022/09</div>
                       <div class="timeline-content">
-                          <h3>Java 兼任講師</h3>
+                          <h3>專案助理</h3>
                           <h4>國立臺北科技大學 National Taipei University of Technology</h4>
                           <ul class="job-description">
-                              <li>進修推廣處 Java 程式設計講師</li>
-                              <li>教授 Java 基礎程式設計課程</li>
-                              <li>指導學生專題製作</li>
-                              <li>編寫教材與課程規劃</li>
+                              <li>國教屬全國高中職教育部行政系統</li>
+                              <li>課務相關模組維護及需求開發</li>
+                              <li>課表查詢模組維護及需求開發</li>
+                              <li>自動排課模組開發</li>
                           </ul>
                       </div>
                   </div>
 
                   <div class="timeline-item">
-                      <div class="timeline-date">2019/08 - 2020/02</div>
+                      <div class="timeline-date">2020/03 - 2021/09</div>
                       <div class="timeline-content">
                           <h3>Java 工程師</h3>
                           <h4>三商電腦產品整合事業部M化服務處</h4>
                           <ul class="job-description">
-                              <li>負責銀行專案開發與維護</li>
-                              <li>使用 Java 開發銀行系統功能</li>
+                              <li>負責金融保險專案開發與維護</li>
+                              <li>使用 Oracle Web Site 翻新三商美邦官網</li>
+                              <li>使用 Spring MVC 開發 三商美邦官網後台</li>
                               <li>系統問題排除與修復</li>
                               <li>撰寫技術文件</li>
                               <li>使用技術：Java、Spring、Oracle DB</li>
@@ -120,21 +194,18 @@
                 
                 <div class="projects-filter">
                     <button class="filter-btn active" data-filter="all">全部</button>
-                    <button class="filter-btn" data-filter="fullstack">全端專案</button>
                     <button class="filter-btn" data-filter="backend">後端開發</button>
+                    <button class="filter-btn" data-filter="fullstack">全端專案</button>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- 反霸凌線上教材 -->
-                    <div class="project-card" data-category="fullstack">
+                    <!-- 反霸凌線上教材 - 後端專案 -->
+                    <div class="project-card" data-category="backend">
                         <div class="project-image">
-                            <img src="path/to/nobullying.jpg" alt="反霸凌線上教材">
+                            <img src="img/反霸凌.avif" alt="反霸凌線上教材">
                             <div class="project-links">
                                 <a href="https://wasupstudionobullying.com" target="_blank" class="project-link">
                                     <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
-                                <a href="#" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
                         </div>
@@ -150,15 +221,14 @@
                                 <span class="tech-tag">Docker</span>
                                 <span class="tech-tag">GCP</span>
                                 <span class="tech-tag">Nginx</span>
-                                <span class="tech-tag">GitHub Action</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SugarDaddy -->
-                    <div class="project-card" data-category="fullstack">
+                    <!-- SugarDaddy - 後端專案 -->
+                    <div class="project-card" data-category="backend">
                         <div class="project-image">
-                            <img src="path/to/sugardaddy.jpg" alt="SugarDaddy">
+                            <img src="img/包養網.avif" alt="SugarDaddy">
                             <div class="project-links">
                                 <a href="#" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i> GitHub
@@ -168,47 +238,41 @@
                         <div class="project-info">
                             <h3>SugarDaddy 社交平台</h3>
                             <p class="project-description">
-                                全端開發專案，實現會員系統、即時通訊、圖片上傳、多條件查詢等功能。整合金流系統，並提供完整的後台管理功能，包含商品管理、公告系統等。
+                                負責後端API開發，實現會員系統、即時通訊、圖片上傳、多條件查詢等功能。整合金流系統，並提供完整的後台管理功能，包含商品管理、公告系統等。
                             </p>
                             <div class="project-tech">
                                 <span class="tech-tag">Java 8</span>
                                 <span class="tech-tag">Spring Boot</span>
                                 <span class="tech-tag">Spring Security</span>
                                 <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">GCP</span>
-                                <span class="tech-tag">Nginx</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">WebSocket</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 鳳飛飛故事館 -->
+                    <!-- 鳳飛飛故事館 - 全端專案 -->
                     <div class="project-card" data-category="fullstack">
                         <div class="project-image">
-                            <img src="path/to/feifei.jpg" alt="鳳飛飛故事館">
+                            <img src="img/鳳飛飛.avif" alt="鳳飛飛故事館">
                             <div class="project-links">
                                 <a href="https://feifeistoryhouse.org" target="_blank" class="project-link">
                                     <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
-                                <a href="#" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
                         </div>
                         <div class="project-info">
                             <h3>鳳飛飛故事館</h3>
                             <p class="project-description">
-                                使用Spring Boot開發的全端專案，實現多角色權限管理，提供完整的內容管理系統。採用MVC架構，使用Thymeleaf實現前端頁面，並提供RESTful API支援。
+                                全端開發專案，使用Spring Boot開發，實現多角色權限管理，提供完整的內容管理系統。採用MVC架構，使用Thymeleaf實現前端頁面，並提供RESTful API支援。
                             </p>
                             <div class="project-tech">
                                 <span class="tech-tag">Java 8</span>
                                 <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">Spring Security</span>
                                 <span class="tech-tag">Thymeleaf</span>
                                 <span class="tech-tag">JPA</span>
                                 <span class="tech-tag">MySQL</span>
                                 <span class="tech-tag">GCP</span>
-                                <span class="tech-tag">Docker</span>
                             </div>
                         </div>
                     </div>
@@ -216,176 +280,182 @@
             </div>
         </section>
 
-        <section id="skills">
+
+       
             <div class="container">
                 <h2 class="section-title">技能專長</h2>
+                <div class="skills-section">                  
+                  <!-- 後端開發 -->
+                  <div class="skill-category">
+                      <h4><i class="fas fa-server"></i> 後端開發</h4>
+                      <div class="skill-items">
+                          <div class="skill-item">
+                              <span class="skill-name">Java</span>
+                              <div class="skill-detail">
+                                  <span>Spring Boot</span>
+                                  <span>Spring Security</span>
+                                  <span>Spring Data JPA</span>
+                                  <span>MyBatis</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">API</span>
+                              <div class="skill-detail">
+                                  <span>RESTful API</span>
+                                  <span>Swagger</span>
+                                  <span>WebSocket</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- 資料庫 & 中間件 -->
+                  <div class="skill-category">
+                      <h4><i class="fas fa-database"></i> 資料庫 & 中間件</h4>
+                      <div class="skill-items">
+                          <div class="skill-item">
+                              <span class="skill-name">關聯式資料庫</span>
+                              <div class="skill-detail">
+                                  <span>MySQL</span>
+                                  <span>SQL Server</span>
+                                  <span>DB2</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">NoSQL & 快取</span>
+                              <div class="skill-detail">
+                                  <span>MongoDB</span>
+                                  <span>Redis</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">消息中間件</span>
+                              <div class="skill-detail">
+                                  <span>RabbitMQ</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- DevOps & 微服務 -->
+                  <div class="skill-category">
+                      <h4><i class="fas fa-code-branch"></i> DevOps & 微服務</h4>
+                      <div class="skill-items">
+                          <div class="skill-item">
+                              <span class="skill-name">容器化 & 編排</span>
+                              <div class="skill-detail">
+                                  <span>Docker</span>
+                                  <span>K8S</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">CI/CD & 監控</span>
+                              <div class="skill-detail">
+                                  <span>Jenkins</span>
+                                  <span>Git</span>
+                                  <span>Nexus</span>
+                                  <span>Grafana</span>
+                                  <span>Kibana</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">微服務工具</span>
+                              <div class="skill-detail">
+                                  <span>Dubbo</span>
+                                  <span>Zookeeper</span>
+                                  <span>Nacos</span>
+                                  <span>Elasticsearch</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- 伺服器 & 雲端 -->
+                  <div class="skill-category">
+                      <h4><i class="fas fa-cloud"></i> 伺服器 & 雲端</h4>
+                      <div class="skill-items">
+                          <div class="skill-item">
+                              <span class="skill-name">Web 伺服器</span>
+                              <div class="skill-detail">
+                                  <span>Tomcat</span>
+                                  <span>Nginx</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">雲端服務</span>
+                              <div class="skill-detail">
+                                  <span>GCP</span>
+                                  <span>AWS</span>
+                              </div>
+                          </div>
+                          <div class="skill-item">
+                              <span class="skill-name">作業系統</span>
+                              <div class="skill-detail">
+                                  <span>Linux</span>
+                                  <span>MacOS</span>
+                                  <span>Windows</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- 前端技術 -->
+                  <div class="skill-category">
+                      <h4><i class="fas fa-laptop-code"></i> 前端技術</h4>
+                      <div class="skill-items">
+                          <div class="skill-item">
+                              <span class="skill-name">網頁技術</span>
+                              <div class="skill-detail">
+                                  <span>HTML</span>
+                                  <span>CSS</span>
+                                  <span>JavaScript</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>               
                 
-                <div class="skills-container">
-                    <!-- 後端技能 -->
-                    <div class="skills-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-server"></i>
-                            後端開發
-                        </h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Java</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Spring Boot</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">MySQL</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 前端技能 -->
-                    <div class="skills-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-code"></i>
-                            前端開發
-                        </h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">HTML/CSS</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Vue.js</span>
-                                    <span class="skill-percentage">65%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 65%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 開發工具 -->
-                    <div class="skills-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-tools"></i>
-                            開發工具
-                        </h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Git</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 85%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Docker</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 75%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">GCP</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
 
         <section id="education">
             <div class="container">
                 <h2 class="section-title">教育背景</h2>
                 
                 <div class="education-container">
+                    <!-- 緯育TibaMe -->
                     <div class="education-card">
                         <div class="education-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="education-content">
-                            <div class="education-time">2015 - 2019</div>
-                            <h3 class="education-title">資訊工程學系</h3>
-                            <h4 class="education-school">國立高雄科技大學</h4>
+                            <div class="education-time">2019/09 - 2020/02</div>
+                            <h3 class="education-title">Java 雲端服務開發技術養成班</h3>
                             <div class="education-details">
                                 <ul>
-                                    <li>主修程式設計與軟體工程</li>
-                                    <li>參與校內式設計競賽</li>
-                                    <li>專題：基於深度學習的影像辨識系統</li>
+                                    <li>Java 程式設計基礎與進階</li>
+                                    <li>Spring Boot 框架應用開發</li>
+                                    <li>網頁前後端整合實務</li>
+                                    <li>資料庫設計與應用</li>
                                 </ul>
-                            </div>
-                            <div class="education-tags">
-                                <span class="tag">資訊工程</span>
-                                <span class="tag">軟體開發</span>
-                                <span class="tag">人工智慧</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- 陸軍專科學校 -->
                     <div class="education-card">
                         <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
+                            <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="education-content">
-                            <div class="education-time">2019</div>
-                            <h3 class="education-title">Java 認證工程師</h3>
-                            <h4 class="education-school">Oracle Certified Professional</h4>
+                            <div class="education-time">2010/09 - 2012/06</div>
+                            <h3 class="education-title">電子工程科</h3>
+                            <h4 class="education-school">陸軍專科學校</h4>
                             <div class="education-details">
                                 <ul>
-                                    <li>Java SE 8 Programmer I</li>
-                                    <li>Java SE 8 Programmer II</li>
+                                    <li>電子電路設計與實作</li>
+                                    <li>通信系統原理與應用</li>
+                                    <li>事專業訓練</li>
                                 </ul>
-                            </div>
-                            <div class="education-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">認證</span>
                             </div>
                         </div>
                     </div>
@@ -398,49 +468,31 @@
                 <h2 class="section-title">聯絡方式</h2>
                 
                 <div class="contact-container">
-                    <!-- 聯絡資訊 -->
+                    <!-- 聯絡資訊卡片 -->
                     <div class="contact-info">
-                        <div class="info-card">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p><a href="mailto:leecheenbao@gmail.com">leecheenbao@gmail.com</a></p>
-                        </div>
-                        
-                        <div class="info-card">
+                      <div class="info-card">
+                        <div class="card-icon">
                             <i class="fab fa-github"></i>
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/leecheenbao" target="_blank">github.com/leecheenbao</a></p>
                         </div>
-                    </div>
+                        <h3>GitHub</h3>
+                        <p>
+                            <a href="https://github.com/leecheenbao" target="_blank" class="info-link">
+                                github.com/leecheenbao
+                            </a>
+                            </p>
+                        </div>
 
-                    <!-- 聯絡表單 -->
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">姓名</label>
-                                <input type="text" id="name" name="name" required>
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">主旨</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">訊息</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane"></i>
-                                發送訊息
-                            </button>
-                        </form>
+                            <h3>Email</h3>
+                            <p>
+                                <a href="mailto:leecheenbao@gmail.com" class="info-link">
+                                    leecheenbao@gmail.com
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -458,5 +510,9 @@
             </div>
         </footer>
     </main>
+
+    <button id="backToTop" class="back-to-top" aria-label="回到頂部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html>
