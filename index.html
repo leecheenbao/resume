@@ -1,420 +1,462 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Cheen Bao's Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <title>李慶寶 Paul - 軟體工程師</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#experience">工作經歷</a></li>
+                <li><a href="#projects">專案展示</a></li>
+                <li><a href="#skills">技能專長</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body class="mx-auto">
-    <!--自我介紹 -->
-    <div class=" mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <dev class="text-center">
-                <img src="./img/leecheenbao.avif" class="p-auto" width="80%" alt="...">
-            </dev>
-            <dev>
-                <h4>Paul Lee</h4>
-                <h4>Software Engineer</h4>
-                <h4>Keelung, Taiwan</h4>
-    
-                <a href="https://github.com/leecheenbao" blank=""> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                    </svg>
-                </a>
-            </dev>
-
-
-           
-          </div>
-          <div class="card col-md-8">
-            <div class="card-body text-bg-secondary">
-                <h2>Professional Summary</h2>
-                <section>
-                    <p>I am a Java backend engineer with four years of experience, proficient in using Java and Spring Boot for web application development, including Mybatis, Spring Data JPA, and more.</p>
-                    <p>In addition to the projects at my current company, I have also participated in several small side projects. These projects involve different technologies and themes, where I independently planned backend API and database design. I am dedicated to implementing CI/CD automation processes to achieve continuous integration and deployment.</p>
-                    <p>My responsibilities go beyond backend API development; they also include database design, logic design, code implementation, and cloud service deployment.</p>
-                    <p>I am also a military veteran with seven years of service, cultivating resilience, discipline, and problem-solving skills. Embracing a new career challenge, I chose to transition to become a software engineer, pursuing my passion for technology and innovation.</p>
-                </section>
-            
-                <section>
-                    <h2>Education and Career Transition</h2>
-                    <p>During the transition, I chose to join the Institute for Information Industry. Throughout this learning journey, I focused on mastering Java-related knowledge, gaining in-depth understanding of this powerful and widely used programming language. I developed teamwork and problem-solving skills. This career transition is not only my professional growth but also a demonstration of perseverance and a learning spirit.</p>
-                </section>
+    <main>
+        <section id="home">
+            <div class="profile">
+                <h1>李慶寶 Paul</h1>
+                <h2>Software Engineer</h2>
+                <p>我是一名具有四年經驗的Java後端工程師，擅長使用Java、Spring Boot進行Web應用程式開發，包括Mybatis、Spring Data JPA等等。</p>
+                <p>除了公司所接觸的項目，我也有參與幾個小型side project的開發，這些項目涉及到不同的技術和主題，都是獨立規劃後端API及資料庫設計，並致力於實現CI/CD自動化流程來達到持續集成和持續部署。</p>
+                <p>我同時也是一位具有七年軍旅生涯的退伍軍人，曾在軍中培養了堅毅、紀律和解決問題的能力。迎接新的生涯挑戰，我選擇了轉職為軟體工程師，追求我對技術和創新的熱愛。</p>
             </div>
-          </div>
-        </div>
-    </div>
-
-    <!--工作經驗 -->
-    <div>
-        <h2>Work Experience</h2>
-        <section>
-            <h5>Backend Engineer</h5>
-            <p><strong>Quantum Tech</strong> • September 2022 - December 2023</p>
-            <ul>
-                <li>Responsible for game platform backend API development and maintenance.</li>
-                <li>Assisted in the transition of on-premise projects to cloud deployment.</li>
-                <li>Developed an authorization management module.</li>
-                <li>Optimized blacklist and frontend risk control logic.</li>
-                <li>Improved the agent mechanism.</li>
-            </ul>
-        </section>
-        <section>
-            <h5>Project Assistant (Contractual)</h5>
-            <p><strong>National Taipei University of Technology</strong> • October 2021 - September 2022</p>
-            <ul>
-                <li>Assisted in the project related to the Ministry of Education's nationwide high school administrative system.</li>
-                <li>Maintained and developed modules related to academic affairs.</li>
-                <li>Handled maintenance and development of the timetable inquiry module.</li>
-                <li>Contributed to the development of an automatic scheduling module.</li>
-            </ul>
         </section>
 
-        <section>
-            <h5>Software Engineer</h5>
-            <p><strong>3C Computer Integration Business Division, M-Service Center, MDS Market</strong> • March 2020 - September 2021</p>
-            <ul>
-                <li>Renovation of the MDS Market official website and backend.</li>
-                <li>Development and maintenance of the MDS Market Customer Platform (MCP).</li>
-                <li>Integration of credit card payments for Cathay HiATM and telecommunications bill payments.</li>
-            </ul>
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">工作經歷</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024/02 - 2024/05</div>
+                        <div class="timeline-content">
+                            <h3>Sr. Backend Programmer</h3>
+                            <h4>香港商易貿創投有限公司 Shoalter Technology Ltd.</h4>
+                            <ul class="job-description">
+                                <li>負責HKTVmall 澳門平台相關業務</li>
+                                <li>利用Spring Admin整合公司內部專案並優化專案規範</li>
+                                <li>實施澳門地區特有的優惠和贈品邏輯，提升用戶體驗</li>
+                                <li>通過CI/CD流程，確保程式碼質量和發布效率</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022/09 - 2023/12</div>
+                        <div class="timeline-content">
+                            <h3>後端工程師</h3>
+                            <h4>量算科技有限公司 Quancom Tech</h4>
+                            <ul class="job-description">
+                                <li>負責遊戲平台後台API開發及維護</li>
+                                <li>協助專案地端轉換雲端部署處理</li>
+                                <li>開發權限管理模組，實現RBAC權限控管機制</li>
+                                <li>優化黑名單及前台風險控管邏輯</li>
+                                <li>優化代理機制，提升系統效能</li>
+                                <li>使用技術：Java、Spring Boot、MySQL、Redis、RabbitMQ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                      <div class="timeline-date">2021/09 - 2022/01</div>
+                      <div class="timeline-content">
+                          <h3>Java 兼任講師</h3>
+                          <h4>國立臺北科技大學 National Taipei University of Technology</h4>
+                          <ul class="job-description">
+                              <li>進修推廣處 Java 程式設計講師</li>
+                              <li>教授 Java 基礎程式設計課程</li>
+                              <li>指導學生專題製作</li>
+                              <li>編寫教材與課程規劃</li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="timeline-item">
+                      <div class="timeline-date">2019/08 - 2020/02</div>
+                      <div class="timeline-content">
+                          <h3>Java 工程師</h3>
+                          <h4>三商電腦產品整合事業部M化服務處</h4>
+                          <ul class="job-description">
+                              <li>負責銀行專案開發與維護</li>
+                              <li>使用 Java 開發銀行系統功能</li>
+                              <li>系統問題排除與修復</li>
+                              <li>撰寫技術文件</li>
+                              <li>使用技術：Java、Spring、Oracle DB</li>
+                          </ul>
+                      </div>
+                  </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2012/07 - 2019/07</div>
+                        <div class="timeline-content">
+                            <h3>調幅台台長</h3>
+                            <h4>陸軍航空六○一旅 通信航管連</h4>
+                            <ul class="job-description">
+                                <li>負責單位通信系統建置與維護</li>
+                                <li>通信設備操作與維修</li>
+                                <li>摩斯電碼電台值班與無線電機維護</li>
+                                <li>部隊訓練與教育業務</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </section>
-        
-    </div>
-    <!--專案 -->
-    <div class="main">
 
-        <div class="card mb-3">
-            <div class="row g-0">
-              
-              <div class="col-md-12">
-                <div class="card-body text-bg-secondary">
-                  <h4 class="card-title">Project: Online Gaming Platform</h4>
-                  <h5>Development Environment:</h5>
-                  <p>Java, Spring Boot</p>
-              
-                  <h5>Technology Stack:</h5>
-                  <p>Dubbo, Zookeeper, Redis, RabbitMQ, Elasticsearch</p>
-              
-                  <h5>Data Processing and Report Generation:</h5>
-                  <p>Responsible for daily and monthly data settlement, as well as the generation of related reports to ensure data accuracy and timeliness.</p>
-                  <p>Implemented asynchronous processing using RabbitMQ by queuing tasks, extracting data from the database for settlement, and storing the results back in Elasticsearch.</p>
-                  <p>Achievements include improved settlement efficiency and effective handling of large amounts of data.</p>
-              
-                  <h5>Backend Risk Management Mechanism:</h5>
-                  <p>Designed and implemented a backend risk management mechanism for user logins on the frontend.</p>
-                  <p>Utilized Redis as a cache to successfully alleviate database read-write pressure, ensuring efficient processing of large amounts of data.</p>
-              
-                  <h5>Technical Tools and Environment:</h5>
-                  <p>Java 8, Docker, Docker Compose, MySQL, Nginx</p>
-                  <p>Actively participated and contributed to system architecture and deployment, enhancing system reliability and scalability.</p>
-              
-                  <h5>Results and Impact:</h5>
-                  <p>Optimized data processing flow, improved overall system performance, reduced report generation time, providing valuable support for business operations.</p>
-                  <p>Successfully implemented a risk management mechanism, enhancing the platform's security and efficiency.</p>
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">專案展示</h2>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="fullstack">全端專案</button>
+                    <button class="filter-btn" data-filter="backend">後端開發</button>
                 </div>
-              </div>
-            </div>
-        </div>
-        
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/反霸凌.avif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body text-bg-secondary">
-                  <h4 class="card-title">Project: Anti-Bullying Online Educational Material - "Our Class Jungle Rule"</h4>
-                  <h5>Role: Backend API Developer</h5>
-        
-                  <p>Independently responsible for backend API development using Java, Spring Boot, MySQL, and Docker.</p>
-                  <p>Containerized the project and deployed both frontend and backend code on Google Cloud Platform (GCP).</p>
-                  <p>Implemented JWT token mechanism using Spring Security for frontend API calls and other identity verifications.</p>
-                  <p>Established CI/CD processes for both frontend and backend projects using GitHub Actions and SSH.</p>
-                  <p>Integrated APIs for BluePay credit card payments and bank transfers.</p>
-                  <p>Utilized Cloud Storage for multimedia storage.</p>
-              
-                  <h5>Technical Tools:</h5>
-                  <p>Java 8, Docker, Docker Compose, MySQL, Nginx</p>
-              
-                  <p>Actively contributed to the containerization of the project and deployment on GCP.</p>
+
+                <div class="projects-grid">
+                    <!-- 反霸凌線上教材 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="path/to/nobullying.jpg" alt="反霸凌線上教材">
+                            <div class="project-links">
+                                <a href="https://wasupstudionobullying.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>我們班的叢林法則 - 反霸凌線上教材</h3>
+                            <p class="project-description">
+                                獨立負責後端API開發，實現JWT token驗證機制，整合金流API，並實現CI/CD部署流程。多媒體內容使用Cloud Storage存儲，完整實現前後端分離架構。
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java 8</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Nginx</span>
+                                <span class="tech-tag">GitHub Action</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SugarDaddy -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="path/to/sugardaddy.jpg" alt="SugarDaddy">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>SugarDaddy 社交平台</h3>
+                            <p class="project-description">
+                                全端開發專案，實現會員系統、即時通訊、圖片上傳、多條件查詢等功能。整合金流系統，並提供完整的後台管理功能，包含商品管理、公告系統等。
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java 8</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Spring Security</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Nginx</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鳳飛飛故事館 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="path/to/feifei.jpg" alt="鳳飛飛故事館">
+                            <div class="project-links">
+                                <a href="https://feifeistoryhouse.org" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>鳳飛飛故事館</h3>
+                            <p class="project-description">
+                                使用Spring Boot開發的全端專案，實現多角色權限管理，提供完整的內容管理系統。採用MVC架構，使用Thymeleaf實現前端頁面，並提供RESTful API支援。
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java 8</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Spring Security</span>
+                                <span class="tech-tag">Thymeleaf</span>
+                                <span class="tech-tag">JPA</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-        </div>
+        </section>
 
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/包養網.avif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: SugarDaddy</h2>
-                  <h5>Role: Backend API Developer</h5>
-            
-                  <p>Independently responsible for backend API development using Java, Spring Boot, MySQL, and Docker.</p>
-                  <p>Containerized the project and deployed both frontend and backend code on Google Cloud Platform (GCP).</p>
-                  <p>Implemented JWT token mechanism using Spring Security for frontend API calls and other identity verifications.</p>
-                  <p>Provided functionalities for member messaging, image uploading, reporting, and multi-condition queries.</p>
-                  <p>Integrated APIs for BluePay credit card payments and bank transfers.</p>
-                  <p>Managed backend administration tasks such as editing products, announcements, homepage images, and member account status.</p>
-              
-                  <h5>Technical Tools:</h5>
-                  <p>Java 8, Docker, Docker Compose, MySQL, Nginx</p>
-              
-                  <p>Actively contributed to the containerization of the project and deployment on GCP.</p>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">技能專長</h2>
+                
+                <div class="skills-container">
+                    <!-- 後端技能 -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            後端開發
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Spring Boot</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 前端技能 -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            前端開發
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vue.js</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 開發工具 -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            開發工具
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GCP</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-        </div>
-   
-        
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/鳳飛飛.avif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: 鳳飛飛故事館</h2>
-                  <h5>Role: Backend API Developer</h5>
-            
-                  <h5>Technologies Used:</h5>
-                  <p>Spring Boot, Spring Security, Thymeleaf, MVC, JPA, GCP</p>
-              
-                  <h5>Backend Development:</h5>
-                  <p>Implemented backend login functionality using Spring Boot and Spring Security, distinguishing between ROLE_ADMIN and ROLE_USER permissions.</p>
-                  <p>Provided backend functionalities for user editing of website content, images, titles, links, and other information.</p>
-              
-                  <h5>Frontend Development:</h5>
-                  <p>Utilized Thymeleaf in a Model-View-Controller (MVC) architecture for the backend frontend.</p>
-              
-                  <h5>API Development:</h5>
-                  <p>Offered frontend RESTful APIs.</p>
-              
-                  <h5>Database:</h5>
-                  <p>Implemented database Object-Relational Mapping (ORM) using JPA.</p>
-              
-                  <h5>Cloud Deployment:</h5>
-                  <p>Deployed the service on Google Cloud Platform (GCP).</p>
-              
-                  <h5>Technical Tools:</h5>
-                  <p>Java 8, Docker, Docker Compose, MySQL, Nginx</p>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">教育背景</h2>
+                
+                <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-time">2015 - 2019</div>
+                            <h3 class="education-title">資訊工程學系</h3>
+                            <h4 class="education-school">國立高雄科技大學</h4>
+                            <div class="education-details">
+                                <ul>
+                                    <li>主修程式設計與軟體工程</li>
+                                    <li>參與校內式設計競賽</li>
+                                    <li>專題：基於深度學習的影像辨識系統</li>
+                                </ul>
+                            </div>
+                            <div class="education-tags">
+                                <span class="tag">資訊工程</span>
+                                <span class="tag">軟體開發</span>
+                                <span class="tag">人工智慧</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-time">2019</div>
+                            <h3 class="education-title">Java 認證工程師</h3>
+                            <h4 class="education-school">Oracle Certified Professional</h4>
+                            <div class="education-details">
+                                <ul>
+                                    <li>Java SE 8 Programmer I</li>
+                                    <li>Java SE 8 Programmer II</li>
+                                </ul>
+                            </div>
+                            <div class="education-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">認證</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-        </div>
+        </section>
 
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/國教屬.avif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: 全國高中職教育部行政系統</h2>
-                  <p>Target Audience: National High School and Vocational High School Teachers</p>
-            
-                  <h5>Teacher Administrative Functions:</h5>
-                  <p>Provided various administrative functions for high school and vocational high school teachers to assist educational institutions in more effectively managing student and course information.</p>
-              
-                  <h5>Student Course Management:</h5>
-                  <p>Implemented course management for high school and vocational high school students, primarily utilizing the 108 curriculum for diverse learning experiences documentation, recording, and management of individual learning journeys.</p>
-              
-                  <h5>Technology Stack:</h5>
-                  <p>Used Java JDBC, JSP, DB2 technologies to ensure system performance and reliability.</p>
-              
-                  <h5>Module Optimization:</h5>
-                  <p>Optimized the scheduling module to enhance the scheduling experience for teachers and students, ensuring efficiency and accuracy in course allocation.</p>
-                  <p>Enhanced features related to synchronous management of the Ministry of Education's 108 curriculum, course selection, and timetable queries for more convenient educational information management.</p>
-              
-                  <h5>Automatic Scheduling System:</h5>
-                  <p>Developed an automatic scheduling system to improve school administrative efficiency and ensure optimal utilization of teaching resources.</p>
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">聯絡方式</h2>
+                
+                <div class="contact-container">
+                    <!-- 聯絡資訊 -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:leecheenbao@gmail.com">leecheenbao@gmail.com</a></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/leecheenbao" target="_blank">github.com/leecheenbao</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 聯絡表單 -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">主旨</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">訊息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                發送訊息
+                            </button>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
-        </div>
-        
-    
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-12">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: 三商美邦MCP 行動夥伴後台系統</h2>
-                  <h5>Technologies Used:</h5>
-                  <p>Java, Spring MVC, JSP, SQL Server</p>
-              
-                  <h5>System Purpose:</h5>
-                  <p>Provided backend management for insurance agents' app and push app messages, offering real-time policy inquiries and online insurance services for policyholders.</p>
-              
-                  <h5>Functional Overview:</h5>
-                  <ul>
-                      <li>Insurance Agent App Backend Management: Developed a comprehensive backend management system for insurance agents, enhancing efficiency and providing rich functionalities.</li>
-                      <li>App Message Push: Implemented a push system for timely communication with relevant insurance agents, promoting communication and real-time responses.</li>
-                      <li>Policyholder Self-Service: Built a self-service platform for policyholders using Spring MVC and JSP, allowing easy access to policy information and online insurance services.</li>
-                  </ul>
-              
-                  <h5>Technical Choices:</h5>
-                  <ul>
-                      <li>Constructed a robust backend structure using Java and Spring MVC to ensure system stability and scalability.</li>
-                      <li>Utilized JSP technology for frontend interfaces, offering an intuitive and user-friendly experience.</li>
-                      <li>Integrated SQL Server as the database for efficient data management and queries.</li>
-                  </ul>
-              
-                  <h5>Results and Impact:</h5>
-                  <p>Successfully established a feature-rich, stable, and reliable backend system for the mobile partner, providing comprehensive management tools for insurance agents.</p>
-                  <p>The implementation of the push system strengthened internal communication, improving the efficiency of information dissemination.</p>
-                  <p>By providing a self-service platform for policyholders, facilitated interaction between policyholders and the business, enhancing customer satisfaction.</p>
+        </section>
+
+        <!-- 頁尾 -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 李慶寶. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-              </div>
             </div>
-        </div>     
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-12">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: HiATM APP 國泰世華電信繳費及信用卡繳費API串接</h2>
-                  <h5>Technologies Used:</h5>
-                  <p>.Net C#</p>
-              
-                  <h5>Functional Overview:</h5>
-                  <ul>
-                      <li>Implemented WebView functionality within the app, providing users with an intuitive and convenient interface to integrate various payment APIs.</li>
-                      <li>Integrated APIs for credit card payments and telecommunication bill payments, simplifying the user payment process and providing a convenient payment experience.</li>
-                      <li>Implemented API integrations for interbank transactions and self-transactions, ensuring the security and correctness of the payment process.</li>
-                  </ul>
-              
-                  <h5>Technical Choices:</h5>
-                  <ul>
-                      <li>Used .Net C# technology stack to ensure development efficiency and cross-platform applicability.</li>
-                      <li>Leveraged the advantages of WebView to provide an excellent user experience while implementing API integrations to ensure smooth and secure payment processes.</li>
-                  </ul>
-              
-                  <h5>Results and Impact:</h5>
-                  <p>Successfully implemented WebView functionality and integrated various payment APIs, enhancing the user experience and providing a seamless payment process within the app.</p>
-                  <p>Integrated credit card payment and telecommunication bill payment APIs contributed to a simplified and convenient payment experience for users.</p>
-                  <p>Implementation of interbank transactions and self-transactions APIs ensured the security and accuracy of the payment process.</p>
-                </div>
-              </div>
-            </div>
-        </div>     
-        <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-12">
-                <div class="card-body text-bg-secondary">
-                  <h2 class="card-title">Project: 三商美邦MLI 形象官網翻新</h2>
-                  <h5>Technologies Used:</h5>
-                  <p>Oracle WebCenter Sites, Java, Spring MVC, Groovy</p>
-              
-                  <h5>Functional Overview:</h5>
-                  <ul>
-                      <li>Established user templates using Oracle WebCenter Sites to achieve rapid development and customization of the corporate governance interface.</li>
-                      <li>Utilized Groovy language to write backend APIs, enhancing the interactivity and functionality of the interface.</li>
-                      <li>Developed a customized backend system using Java and Spring MVC to address the flexibility limitations of Oracle WebCenter Sites.</li>
-                  </ul>
-              
-                  <h5>Technical Choices:</h5>
-                  <ul>
-                      <li>Utilized Oracle WebCenter Sites for user template creation to achieve quick development and customization of the interface.</li>
-                      <li>Used Groovy language to write backend APIs, providing deeper customization and interactive functionality.</li>
-                      <li>Developed a customized backend system using Java and Spring MVC to ensure system stability, scalability, and high customization.</li>
-                  </ul>
-              
-                  <h5>Results and Impact:</h5>
-                  <p>Successfully established a user-friendly and highly customizable corporate governance interface through Oracle WebCenter Sites and Groovy.</p>
-                  <p>The use of Groovy for backend API development enhanced the interactivity and functionality of the interface.</p>
-                  <p>The customized backend system addressed the flexibility limitations of Oracle WebCenter Sites, providing more flexibility and customization options to meet the unique needs of the corporate website.</p>
-                </div>
-              </div>
-            </div>
-        </div>  
-        
-        
-    </div>
-    
-    <!-- 擅長使用技術 -->
-    <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <h3 class="mx-5">Programming Languages and Frameworks</h3>
-            <ul class="mx-5">
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3 class="mx-5">Other</h3>
-            <ul class="mx-5">
-                <li>MySQL</li>
-                <li>SQL Server</li>
-                <li>DB2</li>
-                <li>MongoDB</li>
-                <li>Redis</li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="mx-5">Web Development Skills</h3>
-            <ul class="mx-5">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3 class="mx-5">Operating Systems</h3>
-            <ul class="mx-5">
-                <li>Linux</li>
-                <li>MacOS</li>
-                <li>Windows</li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="mx-5">Servers</h2>
-            <ul class="mx-5">
-                <li>Kubernetes (K8S)</li>
-                <li>Tomcat</li>
-                <li>Nginx</li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="mx-5">Cloud Services</3>
-            <ul class="mx-5">
-                <li>Google Cloud Platform (GCP)</li>
-                <li>Amazon Web Services (AWS)</li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <h3 class="mx-5">Tools</h3>
-            <ul class="mx-5">
-                <li>Docker</li>
-                <li>Git</li>
-                <li>Elasticsearch</li>
-                <li>Dubbo</li>
-                <li>Zookeeper</li>
-                <li>Jenkins</li>
-                <li>Kibana</li>
-            </ul>
-          </div>
-        </div>
-    </div>
-
-    
-
-
-
+        </footer>
+    </main>
 </body>
-
 </html>
