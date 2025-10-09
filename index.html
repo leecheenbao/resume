@@ -229,6 +229,77 @@
                 </div>
 
                 <div class="projects-grid">
+
+                    <!-- 企業 EAP 管理系統 -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="img/adsystem.png" alt="企業 EAP 管理系統">
+                        </div>
+                        <div class="project-info">
+                            <h3>企業 EAP 管理系統</h3>
+
+                            <div class="project-description">
+                                <h4>專案簡介</h4>
+                                <p>此專案為嘉澎塑膠打造之內部員工互動與績效管理平台，結合 RPG 冒險遊戲概念與 EAP（Employee Assistance Program）制度，透過任務與積分機制推廣 ESG 永續理念，強化員工參與度與企業文化建構，並結合績效評估與升遷制度，形成完整的人才激勵循環。</p>
+                                
+                                <h4>系統特色</h4>
+                                <ul class="project-highlights">
+                                    <li>
+                                        <i class="fas fa-gamepad"></i>
+                                        <strong>遊戲化設計：</strong>以 RPG 冒險任務為核心，員工可透過完成 ESG 相關行動（如環保、志工、社區活動）獲得「小星點」、「月亮幣」積分
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-coins"></i>
+                                        <strong>積分激勵機制：</strong>積分除可兌換公司福利外，亦納入年終考績、升遷評估依據，鼓勵員工持續參與正向行為
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-cog"></i>
+                                        <strong>後台管理平台：</strong>提供任務申請、審核與積分管理，支援多角色操作與審核流程
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-building"></i>
+                                        <strong>多企業推廣：</strong>採用多租戶架構（Multi-Tenant），可擴展至其他企業使用，協助推動 ESG 企業文化生態圈
+                                    </li>
+                                </ul>
+
+                                <h4>技術亮點</h4>
+                                <ul class="project-highlights">
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        設計並實現完整的企業 EAP 管理系統架構，採用前後端分離開發模式
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        使用 Node.js 和 Express 框架開發 RESTful API，確保系統擴展性
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        實作 JWT 身份驗證機制，整合多角色權限管理系統
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        設計多租戶架構（Multi-Tenant），支援橫向擴充與跨企業推廣
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        整合遊戲化機制與人事制度，實現積分激勵與績效評估系統
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        使用 MySQL 資料庫管理複雜的任務、積分與用戶數據關係
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Multi-Tenant</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- 健康管理系統 Health Management System -->
                     <div class="project-card" data-category="backend">
                         <div class="project-image">
@@ -239,7 +310,7 @@
 
                             <div class="project-description">
                                 <h4>專案簡介</h4>
-                                <p>此專案為一套結合藥品管理與病患健康追蹤的全方位健康管理平台，透過 QR Code
+                                <p>結合藥品管理與病患健康追蹤的全方位健康管理平台，透過 QR Code
                                     掃描、用藥提醒與衛教資訊，協助病患有效管理個人健康，同時提供後台給管理員維護藥品與衛教資料。</p>
 
                                 <h4>前台功能</h4>
@@ -319,7 +390,7 @@
 
                             <div class="project-description">
                                 <h4>專案簡介</h4>
-                                <p>為公司內部使用的線上選課與課程管理平台，旨在讓員工可自主推薦或報名公司課程，並由人資部門進行課程審核、公告與點數管理。系統採用前後台分離架構，支援身分驗證、課程報名流程與點數制管理，協助企業提升內部教育訓練流程效率。
+                                <p>為企業內部使用的線上選課與課程管理平台，旨在讓員工可自主推薦或報名公司課程，並由人資部門進行課程審核、公告與點數管理。系統採用前後台分離架構，支援身分驗證、課程報名流程與點數制管理，協助企業提升內部教育訓練流程效率。
                                 </p>
 
                                 <h4>前台功能</h4>
@@ -515,8 +586,9 @@
                             <h3>鳳飛飛故事館</h3>
                             <div class="project-description">
                                 <h4>專案簡介</h4>
-                                <p>為「鳳飛飛故事館」打造官方網站與內容管理後台，提供館方人員可即時發布消息、維護展覽資訊與更新官方網站內容。系統採用前後端分離架構，兼顧內容維護彈性與使用者瀏覽體驗。</p>
-                                
+                                <p>為「鳳飛飛故事館」打造官方網站與內容管理後台，提供館方人員可即時發布消息、維護展覽資訊與更新官方網站內容。系統採用前後端分離架構，兼顧內容維護彈性與使用者瀏覽體驗。
+                                </p>
+
                                 <h4>系統功能</h4>
                                 <ul class="project-highlights">
                                     <li>
