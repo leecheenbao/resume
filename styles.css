@@ -267,6 +267,55 @@ nav ul li a:hover::after {
     margin: 0 auto;
 }
 
+/* Side Projects：單欄寬卡片，減少文字換行與捲動 */
+#projects .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible !important;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible;
+}
+#projects .project-description {
+    overflow: visible !important;  /* 取消內部捲動，讓內容完整展開 */
+}
+#projects .project-description {
+    overflow: visible !important;  /* 取消內部捲動，讓內容完整展開 */
+}
+/* 移除專案說明區塊捲動，讓內容完整展開 */
+#projects .project-description {
+    overflow: visible !important;
+}
+#projects .project-description {
+    overflow: visible !important;
+}
+#projects .project-info {
+    overflow: visible;
+}
+#projects .project-card {
+    overflow: visible;
+}
+
 .project-card {
     background: white;
     border-radius: 15px;
@@ -1381,11 +1430,11 @@ footer .container {
     }
 }
 
-/* 專案網格容器 */
+/* 專案網格容器（單欄讓卡片更寬，內容不需捲動） */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     padding: 1rem;
     max-width: 1500px;
     margin: 0 auto;
@@ -1560,4 +1609,52 @@ footer .container {
     margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid #eee;
+}
+
+/* ========== PDF 精簡樣式：產出時移除多餘裝飾，呈現正式履歷 ========== */
+/* html2pdf 按鈕：onclone 會加 .pdf-export 到 body */
+/* 瀏覽器列印：Cmd+P / Ctrl+P → 另存為 PDF */
+
+.pdf-export .projects-filter,
+.pdf-export .project-links,
+.pdf-export .back-to-top,
+.pdf-export .nav-pdf-btn {
+    display: none !important;
+}
+.pdf-export body,
+.pdf-export main {
+    background: #fff !important;
+}
+.pdf-export .profile-content,
+.pdf-export .profile-container,
+.pdf-export .skill-category,
+.pdf-export .skill-item,
+.pdf-export .education-card,
+.pdf-export .info-card,
+.pdf-export .project-card,
+.pdf-export .project-image {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border: 1px solid #e0e0e0 !important;
+}
+.pdf-export .skill-detail span,
+.pdf-export .tech-tag {
+    box-shadow: none !important;
+}
+.pdf-export * {
+    transition: none !important;
+    animation: none !important;
+}
+
+@media print {
+    .projects-filter, .project-links, .back-to-top, .nav-pdf-btn, header { display: none !important; }
+    body { background: #fff !important; }
+    main { padding-top: 0 !important; }
+    .profile-content, .skill-category, .skill-item, .education-card, .info-card, .project-card {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        border: 1px solid #e0e0e0 !important;
+    }
+    .skill-detail span, .tech-tag { box-shadow: none !important; }
+    * { transition: none !important; animation: none !important; }
 }
