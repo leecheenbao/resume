@@ -1,0 +1,102 @@
+/* ========== PDF 專用樣式：精簡、正式、無多餘裝飾 ========== */
+/* 使用方式：開啟 resume-pdf.html，按 Cmd+P / Ctrl+P → 另存為 PDF */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+header, nav, .projects-filter, .back-to-top { display: none !important; }
+main { padding-top: 0 !important; }
+.container { max-width: none; padding: 0 0 16px; }
+.section-title { font-size: 14pt; margin: 24px 0 12px; }
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #333;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 15mm;
+}
+
+/* 標題 */
+h1 { font-size: 22pt; color: #2c3e50; margin-bottom: 4px; }
+h2 { font-size: 14pt; color: #2c3e50; margin: 20px 0 12px; padding-bottom: 4px; border-bottom: 2px solid #3498db; }
+h3 { font-size: 12pt; color: #2c3e50; margin: 12px 0 6px; }
+h4 { font-size: 11pt; color: #555; margin: 8px 0 4px; }
+
+/* 個人簡介區 */
+.profile-intro { display: flex; gap: 20px; margin-bottom: 24px; align-items: flex-start; }
+.profile-photo { flex-shrink: 0; }
+.profile-photo img { width: 120px; height: 120px; object-fit: cover; border-radius: 4px; }
+.profile-header { flex: 1; }
+.profile-header h2 { font-size: 13pt; color: #3498db; margin: 0 0 8px; border: none; }
+.profile-quick-info { font-size: 10pt; color: #666; margin-bottom: 12px; }
+.profile-quick-info span { margin-right: 16px; }
+.profile-header p { margin-bottom: 6px; font-size: 10.5pt; text-align: justify; }
+.social-links { display: none; }
+
+/* 技術專長、工作特質 */
+.profile-details h3 { margin-top: 16px; }
+.profile-details ul { margin: 6px 0 12px 20px; }
+.profile-details li { margin-bottom: 4px; }
+
+/* 工作經歷 */
+.timeline { position: relative; padding-left: 0; }
+.timeline::before { display: none; }
+.timeline-item { display: flex; gap: 16px; margin-bottom: 16px; break-inside: avoid; }
+.timeline-date { flex-shrink: 0; width: 90px; font-weight: 600; color: #3498db; font-size: 10pt; }
+.timeline-content h3 { font-size: 11pt; margin: 0 0 2px; }
+.timeline-content h4 { font-size: 10pt; color: #666; margin: 0 0 8px; }
+.job-description { margin: 0; padding-left: 18px; }
+.job-description li { margin-bottom: 4px; }
+
+/* Side Projects */
+.projects-grid { display: block; }
+.project-card { margin-bottom: 20px; break-inside: avoid; border: 1px solid #e0e0e0; padding: 12px; }
+.project-image { display: none; }
+.project-info h3 { margin: 0 0 8px; }
+.project-description { margin: 8px 0; font-size: 10pt; }
+.project-description h4 { font-size: 10pt; margin: 10px 0 4px; }
+.project-description p { margin-bottom: 8px; }
+.project-highlights { margin: 4px 0 8px 20px; }
+.project-highlights li { margin-bottom: 4px; }
+.project-tech { margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; }
+.tech-tag { display: inline-block; background: #f0f0f0; padding: 2px 8px; margin: 2px 4px 2px 0; font-size: 9pt; border-radius: 2px; }
+.project-links { display: none; }
+
+/* 技能專長 */
+.skills-section { display: block; }
+.skill-category { margin-bottom: 16px; break-inside: avoid; }
+.skill-category h4 { margin: 0 0 8px; font-size: 11pt; }
+.skill-items { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.skill-item { display: inline-block; }
+.skill-name { font-weight: 600; color: #2c3e50; margin-right: 6px; }
+.skill-detail { display: inline; }
+.skill-detail span { background: #f5f5f5; padding: 2px 8px; margin: 0 4px 4px 0; font-size: 9pt; display: inline-block; border-radius: 2px; }
+
+/* 教育背景 */
+.education-container { display: block; }
+.education-card { display: flex; gap: 12px; margin-bottom: 16px; break-inside: avoid; }
+.education-icon { display: none; }
+.education-time { font-weight: 600; color: #3498db; font-size: 10pt; }
+.education-title { font-size: 11pt; margin: 0 0 4px; }
+.education-school { font-size: 10pt; color: #666; margin: 0 0 8px; }
+.education-details ul { margin: 0; padding-left: 18px; }
+
+/* 聯絡方式 */
+.contact-info { display: flex; flex-wrap: wrap; gap: 16px; }
+.info-card { padding: 12px; border: 1px solid #e0e0e0; flex: 1; min-width: 150px; }
+.card-icon { display: none; }
+.info-card h3 { font-size: 10pt; margin: 0 0 4px; }
+.info-card a { color: #333; text-decoration: none; }
+
+/* 頁尾 */
+footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #ddd; font-size: 9pt; color: #888; text-align: center; }
+footer .social-links { display: none; }
+
+/* 列印優化 */
+@media print {
+    body { padding: 12mm; }
+    .timeline-item, .project-card, .skill-category, .education-card { break-inside: avoid; }
+}
