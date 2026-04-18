@@ -42,6 +42,8 @@
                             <p>平時也會利用空閒時間學習新技術，並實作於專案上。</p>
                             <p>擅長使用 Java、Spring Boot、Node.js、Express 進行Web應用開發，包括Mybatis、Spring Data JPA等等。</p>
                             <p>並致力於實現 CI/CD 自動化流程來達到持續集成和持續部署。</p>
+                            <p>在資料庫面向，具備表結構與索引設計、慢查詢與 SQL 調優、讀寫分離／主備架構規劃，以及 Redis 快取與資料一致性取捨等實務經驗。</p>
+                            <p>在流量與穩定性面向，曾參與體育直播、聊天室與推播等高互動場景，搭配監控告警與關鍵路徑優化，因應賽事尖峰與連線高峰。</p>
                             <p>除了公司所接觸的項目，我也有參與幾個小型 Side Project 的開發，這些項目涉及到不同的技術和主題，都是獨立與用戶接洽並規劃後端API及資料庫設計。</p>
                             <p>在這些項目中我除了主要負責後端API開發的工作，還包括資料庫設計、邏輯設計和程式碼實現以及雲端服務部署等方面。</p>
                         </div>
@@ -59,7 +61,8 @@
                             <ul class="skill-list">
                                 <li>使用 Java 開發 Spring Boot RESTful API</li>
                                 <li>使用 Node.js 開發 RESTful API</li>
-                                <li>資料庫設計與優化 (MySQL, SQLServer, Oracle, Redis)</li>
+                                <li>資料庫設計與優化：MySQL／SQL Server／Redis，含索引、交易、慢查詢與讀寫分離</li>
+                                <li>流量與效能：快取策略、高併發場景（直播／即時互動）、搭配監控與告警掌握系統健康度</li>
                                 <li>微服務架構設計</li>
                                 <li>CI/CD 自動化部署流程</li>
                                 <li>雲端服務整合 (GCP, AWS)</li>
@@ -103,8 +106,10 @@
                             <ul class="job-description">
                                 <li>負責後端 API 開發及維護</li>
                                 <li>負責體育 APP 後端 API 開發</li>
-                                <li>開發賽事直播系統，提供主播轉播賽事功能，並提供系統監控告警機制</li>
+                                <li>開發賽事直播系統，提供主播轉播賽事功能，並提供系統監控告警機制（直播最高同時觀看數約 3000 人）</li>
                                 <li>優化彩票系統主要及備用分離架構，提供系統穩定性</li>
+                                <li>資料庫層面優化查詢與索引，並依業務特性規劃讀寫／主備分流，降低尖峰對核心庫的衝擊</li>
+                                <li>因應賽事與直播流量高峰，優化熱點 API 與快取策略，並透過監控指標追蹤延遲與錯誤率</li>
                             </ul>
                         </div>
                     </div>
@@ -118,6 +123,7 @@
                                 <li>負責體育賽事數據爬蟲</li>
                                 <li>負責體育賽事主播影音及賽事直播串流</li>
                                 <li>直播平台聊天室及推播功能優化</li>
+                                <li>針對聊天室與推播等高頻寫入／廣播場景，調整資料存取與訊息分發流程以承載較高併發</li>
                             </ul>
                         </div>
                     </div>
@@ -146,6 +152,7 @@
                                 <li>開發權限管理模組，實現RBAC權限控管機制</li>
                                 <li>優化黑名單及前台風險控管邏輯</li>
                                 <li>優化代理機制，提升系統效能</li>
+                                <li>MySQL 查詢與索引調整、Redis 快取熱點資料，並以 RabbitMQ 削峰與非同步處理降低資料庫壓力</li>
                                 <li>使用技術：Java、Spring Boot、MySQL、Redis、RabbitMQ</li>
                             </ul>
                         </div>
@@ -746,6 +753,17 @@
                                     <span>RabbitMQ</span>
                                 </div>
                             </div>
+                            <!-- 資料庫工程與流量相關實務 -->
+                            <div class="skill-item">
+                                <span class="skill-name">資料庫工程實務</span>
+                                <div class="skill-detail">
+                                    <span>索引與執行計畫</span>
+                                    <span>慢查詢調優</span>
+                                    <span>讀寫分離／主備</span>
+                                    <span>交易與鎖</span>
+                                    <span>快取與一致性</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -777,6 +795,16 @@
                                     <span>Zookeeper</span>
                                     <span>Nacos</span>
                                     <span>Elasticsearch</span>
+                                </div>
+                            </div>
+                            <!-- 流量、併發與可觀測性 -->
+                            <div class="skill-item">
+                                <span class="skill-name">流量與穩定性</span>
+                                <div class="skill-detail">
+                                    <span>高併發場景</span>
+                                    <span>快取與削峰</span>
+                                    <span>即時互動（直播／聊天）</span>
+                                    <span>監控告警</span>
                                 </div>
                             </div>
                         </div>
