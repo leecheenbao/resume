@@ -99,4 +99,19 @@ footer .social-links { display: none; }
 @media print {
     body { padding: 12mm; }
     .timeline-item, .project-card, .skill-category, .education-card { break-inside: avoid; }
+    /* 職涯目標整塊自新頁起排，避免與「工作特質」擠在同一頁尾 */
+    .career-list {
+        break-before: page;
+        page-break-before: always;
+    }
+    /* Side Projects 區塊自新頁起排 */
+    #projects {
+        break-before: page;
+        page-break-before: always;
+    }
+    /* 教育背景自新頁起排 */
+    #education {
+        break-before: page;
+        page-break-before: always;
+    }
 }
